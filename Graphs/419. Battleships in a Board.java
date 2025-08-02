@@ -5,9 +5,7 @@ class Solution {
         }
         board[i][j]='.';
         dfs(board,i+1,j);
-        dfs(board,i-1,j);
         dfs(board,i,j+1);
-        dfs(board,i,j-1);
     }
     public int countBattleships(char[][] board) {
         int count=0;
